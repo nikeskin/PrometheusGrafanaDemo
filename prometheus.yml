@@ -8,8 +8,8 @@ scrape_configs:
     static_configs:
       - targets: ['localhost:9090']
 
-  - job_name: 'spring-actuator'
+  - job_name: 'sprig-actuator'
     metrics_path: '/actuator/prometheus'
     scrape_interval: 5s
     static_configs:
-      - targets: ['192.168.178.1:8080']
+      - targets: ['192.168.178.70:8080']
